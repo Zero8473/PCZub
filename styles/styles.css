@@ -1,0 +1,223 @@
+
+
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: .2px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.container{
+    height:720px;
+}
+
+.head-container{
+
+    display:grid;
+    place-content:center;
+    text-align: center;
+
+    height:200px;
+    font-size: 18px;
+    border-bottom: 2px solid black;
+
+}
+
+
+/*outer box*/
+.body-container{
+    display:flex;
+    height:100%;
+    margin-bottom: 2px;
+    border-bottom: 4px solid black;
+
+}
+
+/*left box*/
+.nav-container{
+    width:25%;
+    border-right:2px solid black;
+    text-align: left;
+
+}
+
+.nav-title{
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+
+}
+
+.link-container{
+    width: 90%;
+    margin-left: auto;
+
+}
+
+.nav-list li{
+    margin-bottom: 10px;
+
+}
+
+
+
+
+/*right box*/
+.text-container{
+    width: 75%;
+    /*border: 2px solid black;*/
+}
+
+
+/*styles von pcmain.htm*/
+span.preis{
+    color: red;
+}
+
+p#mail_angebot{
+    font-family: Arial, Helvetica;
+    font-style: italic;
+}
+
+table#produkte{
+    border-spacing: 20px;
+}
+
+
+/*order*/
+
+.order-header, .newsletter{
+    background: hsl(360 0% 40%);
+}
+.order-header{
+    color:#fff;
+}
+.newsletter{
+    text-align: left;
+}
+
+/*personal information*/
+.order-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: solid 2px #000;
+}
+
+.data-container, .order-subheader {
+    background: hsl(360 0% 80%);
+}
+
+.data-container{
+    font-weight: 700;
+}
+
+
+
+.personal-info-container{
+    display: flex;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.info-left, .info-right{
+    text-align: end;
+}
+.label{
+    margin-right:10px;
+}
+.info-right{
+    margin-left: 10px;
+
+}
+
+
+
+/*customer section*/
+
+.customer-container{
+    display: block;
+    text-align: start;
+    margin-left: 22%;
+    margin-top: 10px;
+
+}
+
+.message-container{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+#message{
+    width: 100%;
+    height: 150px;
+}
+
+.submit, .delete{
+    display: inline-block
+}
+
+
+
+
+/*background shenanigans*/
+.background{
+    display:grid;
+    place-content:center;
+    text-align: center;
+    min-height: 600px;
+    max-width: 80%;
+    position: relative;
+    isolation:isolate;
+    margin-left: auto;
+    margin-right: auto;
+    border:solid 2px #000;
+    box-shadow: 10px 10px 8px #888888;
+    border-radius: 2px;
+
+}
+
+.background-font{
+    font-size: 18px;
+    font-family: MOOD Outline, Georgia;
+
+}
+
+.background::after{
+    content:'';
+    position: absolute;
+    z-index: -1;
+    inset:0;
+    opacity:0.6;
+
+    background-image:url("https://i.pinimg.com/originals/aa/02/78/aa02780bbc7e6c5e2d52d9b0e919fbf6.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.construction-placeholder{
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.construction-placeholder img{
+    width:100%;
+    max-width: 400px;
+}
+
+
+
+
