@@ -16,6 +16,15 @@ body{
     font-size: 14px;
 }
 
+a{
+    color:#000;
+    text-decoration: none;
+}
+
+a:visited{
+    color:#000;
+}
+
 .container{
     height:720px;
 }
@@ -97,20 +106,31 @@ table#produkte{
 /*order*/
 
 .order-header, .newsletter{
-    background: hsl(360 0% 40%);
+    background: hsl(360 0% 50%);
 }
 .order-header{
     color:#fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .newsletter{
     text-align: left;
+    color: #fff;
+}
+
+.order-subheader{
+    padding-top: 15px;
+    padding-bottom:15px;
+    font-weight: 700;
 }
 
 /*personal information*/
 .order-container{
+    width: 40%;
+    
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    margin-top: 50px;
     border: solid 2px #000;
 }
 
@@ -126,7 +146,7 @@ table#produkte{
 
 .personal-info-container{
     display: flex;
-    width: 80%;
+    width: 90%;
     margin-left: auto;
     margin-right: auto;
 
@@ -161,15 +181,33 @@ table#produkte{
     text-align: left;
 }
 
+/*textarea for order message*/
 #message{
     width: 100%;
-    height: 150px;
+    height: 100px;
+}
+
+.buttons{
+    text-align: left;
+    margin-left: 20px;
 }
 
 .submit, .delete{
-    display: inline-block
+    display: inline-block;
+    
+}
+.submit>input:hover{
+    background-color: green;
 }
 
+.delete > input:hover{
+    background-color: red;
+}
+
+/*targets input that's first child of submit and delete respectively*/
+.submit > input, .delete > input{
+    padding: 0px 5px;
+}
 
 
 
