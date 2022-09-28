@@ -1,6 +1,8 @@
 <?php
 
 $path="./texte/pcmain.htm";
+
+//test for review page --remove after completion--
 if(isset($_GET['test'])){
   if($_GET['test']=='review'){
     $path= './texte/bestellungreview.html';
@@ -40,7 +42,7 @@ if(isset($_GET['rechts'])){
     
 }
 
-
+//checks if submit button on order page was pressed and assigns the inserted text and reroutes to review page
 if(array_key_exists('submit', $_POST)){
     $name=$_POST['name'];
     $street=$_POST['street'];
@@ -49,10 +51,18 @@ if(array_key_exists('submit', $_POST)){
     $postal=$_POST['postal'];
     $mail =$_POST['mail'];
     $customer=$_POST['customer-type'];
-    $message=$_POST['message'];
-    if(isset ($_POST['newsletter'])){
-        $newsletter=$_POST['newsletter'];
+    if(isset($_POST['message'])){
+        $message=$_POST['message'];
+        $messageClass='show-message';
+    }else{
+        $messageClass='invis-message';
+    }
 
+    if(isset ($_POST['newsletter'])){
+        $newsletter="Vielen Dank, dass Sie sich für den Newsletter der PC und Zubehör GmbH entschieden haben.";
+        $class='subscribed';
+    }else{
+        $class='not-subscribed';
     }
     $path = './texte/bestellungreview.html' ;
     

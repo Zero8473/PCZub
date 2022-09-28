@@ -231,7 +231,7 @@ table{
     margin-left: auto;
     margin-right: auto;
     
-    border-collapse: collapse; /*removes unncessary borders*/
+    border-collapse: collapse; /*removes unnecessary borders*/
    
 }
 
@@ -252,6 +252,23 @@ td{
     text-align: left;
     padding-left: 5px;
 }
+
+.show-message{
+    display: block;
+}
+
+.invis-message{
+    display: none;
+}
+
+.subscribed{
+    display: block;
+}
+.not-subscribed{
+    display: none;
+}
+
+
 
 
 

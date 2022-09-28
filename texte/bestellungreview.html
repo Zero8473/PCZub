@@ -3,60 +3,50 @@
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
-<html>
-    <head>
-        <title>review</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div class="review-container">
-            <div class="review-header">
-                <p>
-                    Folgende Daten haben Sie der PC- und Zubehör GmbH mitgeteilt
-                </p>
-            </div>
-            
-            
-            <table border="1">
-               <tbody>
-                    <tr>
-                        <td class='sixth'>Name</td>
-                        <td class='third'>a</td>
-                        <td class='sixth'>Vorname</td>
-                        <td class='third'>a</td>
-                    </tr>
-                    <tr>
-                        <td>Straße/Nr.</td>
-                        <td>a</td>
-                        <td>Ort</td>
-                        <td>a</td>
-                    </tr>
-                    <tr>
-                        <td>Datum</td>
-                        <td>a</td>
-                        <td>E-Mail</td>
-                        <td>a</td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td>Geschäftskunde</td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="single-cell" colspan="4">Mitteilung</td>
-                    </tr>
-                    <tr>
-                        <td class="single-cell" colspan="4">Senden Sie mir 20 Ihrer tollen Drucker</td>
-                    </tr>
-                    <tr>
-                        <td class="single-cell" colspan="4">Vielen Dank, dass Sie sich für den Newsletter der PC und Zubehör GmbH entschieden haben.</td>
-                    </tr>
-                </tbody>
-            </table>
 
-        
-        
-    </body>
-</html>
+<div class="review-container">
+    <div class="review-header">
+        <p>
+            Folgende Daten haben Sie der PC- und Zubehör GmbH mitgeteilt
+        </p>
+    </div>
+
+
+    <table border="1">
+       <tbody>
+            <tr>
+                <td class='sixth'>Name</td>
+                <td class='third'><?php echo $name?></td>
+                <td class='sixth'>Vorname</td>
+                <td class='third'><?php echo $surname?></td>
+            </tr>
+            <tr>
+                <td>Straße/Nr.</td>
+                <td><?php echo $street?></td>
+                <td>Ort</td>
+                <td><?php echo $postal?></td>
+            </tr>
+            <tr>
+                <td>Datum</td>
+                <td><?php echo $date?></td>
+                <td>E-Mail</td>
+                <td><?php echo $mail?></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><?php echo $customer?></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="<?php echo $messageClass?>">
+                <td class="single-cell" colspan="4">Mitteilung</td>
+            </tr>
+            <tr class="<?php echo $messageClass?>">
+                <td class="single-cell" colspan="4"><?php echo $message?></td>
+            </tr>
+            <tr class="<?php echo $class?>">
+                <td class="single-cell" colspan="4"><?php echo $newsletter?></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
