@@ -95,7 +95,7 @@ span.preis{
 }
 
 p#mail_angebot{
-    font-family: Arial, Helvetica;
+    font-family: Arial, Helvetica, sans-serif;
     font-style: italic;
 }
 
@@ -158,6 +158,11 @@ table#produkte{
 .label{
     margin-right:10px;
 }
+
+.input-field{
+    width:60%;
+}
+
 .info-right{
     margin-left: 10px;
 
@@ -213,7 +218,7 @@ table#produkte{
 
 /*targets input that's first child of submit and delete respectively*/
 .submit > input, .delete > input{
-    padding: 0px 5px;
+    padding: 0 5px;
 }
 
 
@@ -294,7 +299,7 @@ td{
 
 .background-font{
     font-size: 18px;
-    font-family: MOOD Outline, Georgia;
+    font-family: MOOD Outline, Georgia, sans-serif;
 
 }
 
