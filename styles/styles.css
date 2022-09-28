@@ -260,12 +260,17 @@ td{
 /*table column width*/
 .sixth{
     width: var(--sixth);
+    padding-right: 5px;
+    text-align: right;
 }.third{
     width: var(--third);
+    padding-left:5px;
+    text-align: left;
 }
 
  /*cells spanning over entire width of table*/
 .single-cell{
+
     border-style: none;
     border-bottom: 1px solid black !important;
     text-align: left;
@@ -274,17 +279,18 @@ td{
 
 
 /*row toggles*/
+/* class not used
 .show-message{
-    display: block;
-}
+    display: table-row;
+}*/
 
 .invis-message{
     display: none;
 }
 
-.subscribed{
-    display: block;
-}
+/*.subscribed{
+    display: table-row;
+}*/
 .not-subscribed{
     display: none;
 }

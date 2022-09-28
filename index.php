@@ -51,16 +51,18 @@ if(array_key_exists('submit', $_POST)){
     $postal=$_POST['postal'];
     $mail =$_POST['mail'];
     $customer=$_POST['customer-type'];
-    if(isset($_POST['message'])){
+    //check if user wrote message and display row if yes
+    if($_POST['message']!=""){
         $message=$_POST['message'];
-        $messageClass='show-message';
+        //$messageClass='show-message'; //unnecessary since empty class has same effect as styled show-message class
     }else{
         $messageClass='invis-message';
     }
 
+    //check if newsletter box ticked and display message if yes
     if(isset ($_POST['newsletter'])){
         $newsletter="Vielen Dank, dass Sie sich für den Newsletter der PC und Zubehör GmbH entschieden haben.";
-        $class='subscribed';
+        //$class='subscribed'; //see show-message comment
     }else{
         $class='not-subscribed';
     }
