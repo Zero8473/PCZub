@@ -199,23 +199,27 @@ table#produkte{
     resize: none;
 }
 
+/*container for buttons*/
 .buttons{
     text-align: left;
     margin-left: 20px;
     color:#ffffff;
 }
-
+/*layout*/
 .submit, .delete{
     display: inline-block;
 
 
 
 }
+/*button styling*/
 #button, #button2{
     background-color: var(--button);
     border: 2px solid var(--button);
     border-radius: 5px;
 }
+
+/*hover effects*/
 .submit>input:hover{
     background-color: var(--button-hover)!important;
     border-color: var(--button-hover) !important;

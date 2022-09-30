@@ -1,5 +1,5 @@
 <?php
-
+//url for dynamic content
 $path="./texte/pcmain.htm";
 
 //test for review page --remove after completion--
@@ -73,7 +73,7 @@ if(array_key_exists('submit', $_POST)){
 
 
 
-
+//adds gui
 require_once './gui.php';
 /* 
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
